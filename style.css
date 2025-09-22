@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: white;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  background: linear-gradient(rgba(10, 61, 98, 0.7), rgba(10, 61, 98, 0.7)), url("imagens/bg-hero.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.stories {
+  padding: 4rem 1rem;
+  background: #f8f9fa;
+  margin: 2rem 0;
+  border-radius: 12px;
+}
+.stories h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.stories .stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.stories .story-card {
+  text-align: center;
+}
+.stories .story-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #0a3d62;
+}
+.stories .story-card iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}/*# sourceMappingURL=style.css.map */

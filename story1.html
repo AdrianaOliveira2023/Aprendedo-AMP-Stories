@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+
+  
+  <title>Flores</title>
+
+  <!-- URL canônica: indica a versão 'principal' desta página para buscadores -->
+  <link rel="canonical" href="story1.html">
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <!-- AMP boilerplate obrigatório: evita que o conteúdo apareça antes do runtime AMP carregar -->
+  <style amp-boilerplate>
+    body { visibility:hidden }
+  </style>
+
+  <!-- Para navegadores com JavaScript desativado: mostra o conteúdo -->
+  <noscript>
+    <style amp-boilerplate>
+      body { visibility: visible }
+    </style>
+  </noscript>
+
+  <!-- Script principal do runtime AMP (necessário para todas as páginas AMP) -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <!-- Script do componente amp-story (adiciona funcionalidades necessárias para Stories) -->
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+</head>
+<body>
+
+  <!-- Contêiner principal do AMP Story. -->
+  <amp-story standalone
+    title="Flores"
+    publisher="Adriana"
+    publisher-logo-src=""
+    poster-portrait-src="imagens/story1/capa.png"
+    on="story-end:AMP.navigateTo(url=story2.html)">
+
+    <!-- Página 1 do story -->
+    <amp-story-page id="page1" auto-advance-after="5s">
+      <!-- Camada que preenche toda a tela (usada normalmente para a imagem de fundo) -->
+      <amp-story-grid-layer template="fill">
+        
+        <amp-img
+          src="imagens/story1/hibisco-crespo.png"          
+          width="720" height="1280"
+          layout="responsive"
+          alt="hibisco-crespo">
+        </amp-img>
+      </amp-story-grid-layer>
+
+      <!-- Camada vertical para conteúdo sobreposto (texto, logo, botões) -->
+      <amp-story-grid-layer template="vertical">
+
+        <!-- Exemplo de imagem fixa (logo/ícone)
+        <amp-img src="" width="96" height="96" layout="fixed" alt=""></amp-img>  -->
+
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Página 2 do story -->
+    <amp-story-page id="page2" auto-advance-after="5s">
+      <!-- Fundo da página 2 -->
+      <amp-story-grid-layer template="fill">
+        <amp-img
+          src="imagens/story1/orquídea-Amor-Perfeito.png"
+          width="720" height="1280"
+          layout="responsive"
+          alt="orquídea-Amor-Perfeito">
+        </amp-img>
+      </amp-story-grid-layer>
+
+      <!-- Camada vertical reservada para títulos/legendas  -->
+      <amp-story-grid-layer template="vertical">        
+       
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Página 3 -->
+    <amp-story-page id="page3" auto-advance-after="5s">
+      <amp-story-grid-layer template="fill">
+        <amp-img
+          src="imagens/story1/flamboyant-mirim.png"
+          width="720" height="1280"
+          layout="responsive"
+          alt="flamboyant-mirim">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <!-- Página 4-->
+    <amp-story-page id="page4" auto-advance-after="5s">
+      <amp-story-grid-layer template="fill">
+        <amp-img
+          src="imagens/story1/hibisco-colibri.png"
+          width="720" height="1280"
+          layout="responsive"
+          alt="hibisco-colibri">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+  </amp-story>
+
+</body>
+</html>
