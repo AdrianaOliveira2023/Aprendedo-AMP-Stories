@@ -27,37 +27,40 @@ body {
     margin-bottom: 1rem;
   }
 }
-
 .stories {
-  padding: 4rem 1rem;
-  background: $cinza;
-  margin: 2rem 0;
-  border-radius: 12px;
+  padding: 4rem 1rem;              // Espaçamento interno: 4rem em cima/baixo e 1rem nas laterais
+  background: $cinza;              // Fundo definido com a variável de cor $cinza
+  margin: 2rem 0;                  // Espaçamento externo: 2rem em cima/baixo e 0 nas laterais
+  border-radius: 12px;             // Bordas arredondadas com raio de 12px
 
   h3 {
-    text-align: center;
-    margin-bottom: 2rem;
+    text-align: center;            // Centraliza o texto do título <h3>
+    margin-bottom: 2rem;           // Espaçamento inferior de 2rem
   }
 
   .stories-grid {
-    display: grid;
+    display:grid;              // Define o container como grid
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 2rem;
-    justify-items: center;
+                                    // Cria colunas automáticas que se ajustam ao espaço disponível
+                                    // Cada coluna tem no mínimo 360px e ocupa o máximo possível até 1fr
+    gap: 2rem;                      // Espaçamento de 2rem entre os itens do grid
+    justify-items: center;          // Centraliza os itens horizontalmente dentro de cada célula do grid
   }
 
   .story-card {
-    text-align: center;
+    text-align: center;             // Centraliza todo o conteúdo do card
 
     h4 {
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-      color: $primaria;
+      margin-bottom: 1rem;          // Espaçamento inferior de 1rem
+      font-size: 1.25rem;           // Define tamanho da fonte em 1.25rem
+      color: $primaria;             // Cor do texto definida pela variável $primaria
     }
 
     iframe {
-      border-radius: 12px;
+      border-radius: 12px;          // Arredonda os cantos do iframe
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                    // Adiciona sombra: deslocamento (x=0, y=4px),
+                                    // desfoque de 12px, cor preta com opacidade 15%
     }
   }
 }
@@ -70,3 +73,4 @@ body {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+
